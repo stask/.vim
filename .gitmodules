@@ -25,9 +25,6 @@
 [submodule "bundle/vim-rooter"]
 	path = bundle/vim-rooter
 	url = git://github.com/airblade/vim-rooter.git
-[submodule "bundle/vim-tcomment"]
-	path = bundle/vim-tcomment
-	url = git://github.com/tsaleh/vim-tcomment.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
