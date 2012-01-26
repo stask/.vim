@@ -1,0 +1,6 @@
+# Setup
+
+* Clone the .vim folder to $HOME/.vim
+* ln -s $HOME/.vim/.vimrc $HOME/.vimrc
+* ln -s $HOME/.vim/.gvimrc $HOME/.gvimrc
+
