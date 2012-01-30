@@ -295,4 +295,4 @@ colorscheme solarized
 
 
 " clean trailing whitespace on save
-autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd FileType c,cpp,java,rb,clj,scala,erb,html autocmd BufWritePre <buffer> :%s/\s\+$//e
