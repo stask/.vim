@@ -1,8 +1,9 @@
 if has("gui_running")
   set fuopt+=maxhorz
-  "set guifont=Anonymous\ Pro:h16
+  set guifont=Anonymous\ Pro:h18
   "set guifont=Anonymous:h14
-  set guifont=Menlo:h18
+  "set guifont=Menlo:h18
+  "set guifont=Consolas:h18
   "set transparency=12
   set columns=100
   set lines=999
