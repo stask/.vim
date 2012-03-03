@@ -300,3 +300,4 @@ let g:vimclojure#FuzzyIndent = 1
 
 " clean trailing whitespace on save
 autocmd FileType c,cpp,java,rb,clj,scala,erb,html autocmd BufWritePre <buffer> :%s/\s\+$//e
+
