@@ -291,7 +291,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 set background=dark
-colorscheme molokai
+"colorscheme molokai
+colorscheme vividchalk
 
 " VimClojure stuff
 let g:vimclojure#HighlightBuiltins = 1
