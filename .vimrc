@@ -26,8 +26,7 @@ vnoremap <F1> <ESC>
 
 " Pathogen stuff
 filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " Get that filetype stuff happening
 filetype on
@@ -79,7 +78,7 @@ set lazyredraw
 " At least let yourself know what mode you're in
 set showmode
 
-" Enable enhanced command-line completion. Presumes you have compiled 
+" Enable enhanced command-line completion. Presumes you have compiled
 " with +wildmenu. See :help 'wildmenu'
 set wildmenu
 set wildmode=list:longest
@@ -299,6 +298,21 @@ let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#FuzzyIndent = 1
 
-" clean trailing whitespace on save
-autocmd FileType c,cpp,java,rb,clj,scala,erb,html autocmd BufWritePre <buffer> :%s/\s\+$//e
+" Tidying whitespace
+" (http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/)
 
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+
+nmap _= :call Preserve("normal gg=G")<CR>
