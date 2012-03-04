@@ -316,3 +316,12 @@ endfunction
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 nmap _= :call Preserve("normal gg=G")<CR>
+
+" FuzzyFinder settings
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|class|jar|lein-deps-sum|lein-failures|DS_Store)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp|class|jar|lein-deps-sum|lein-failures|DS_Store)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+
+nmap <silent> <leader>t :FufCoverageFile<CR>
+nmap <silent> <leader>f :FufFile<CR>
+nmap <silent> <leader>b :FufBuffer<CR>
+nmap <silent> <leader>d :FufDir<CR>
