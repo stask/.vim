@@ -325,3 +325,6 @@ nmap <silent> <leader>t :FufCoverageFile<CR>
 nmap <silent> <leader>f :FufFile<CR>
 nmap <silent> <leader>b :FufBuffer<CR>
 nmap <silent> <leader>d :FufDir<CR>
+
+set nobackup
+set undodir=~/.vimundo
