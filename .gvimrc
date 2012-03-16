@@ -11,8 +11,15 @@ if has("gui_running")
   " Remap Command-T to FuzziFileFinder (or whatever it's called)
   macmenu &File.New\ Tab key=<nop>
   macmenu &File.Open\ Tab\.\.\. key=<nop>
-  map <D-t> :FufFile<CR>
-  imap <D-t> :FufFile<CR>
-  map <D-T> :FufBuffer<CR>
-  imap <D-T> :FufBuffer<CR>
+
+  map <D-t> :FufCoverageFile<CR>
+  imap <D-t> :FufCoverageFile<CR>
+  map <D-f> :FufFile<CR>
+  imap <D-f> :FufFile<CR>
+  map <D-b> :FufBuffer<CR>
+  imap <D-b> :FufBuffer<CR>
+  map <D-d> :FufDir<CR>
+  imap <D-d> :FufDir<CR>
+
+  au GUIEnter * set fullscreen
 endif
