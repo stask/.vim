@@ -328,3 +328,6 @@ nmap <silent> <leader>d :FufDir<CR>
 
 set nobackup
 set undodir=~/.vimundo
+
+" Yank to system clipboard by default
+set clipboard=unnamed
