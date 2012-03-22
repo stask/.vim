@@ -94,7 +94,3 @@
   path = bundle/vim-sbt
   url = git://github.com/derekwyatt/vim-sbt.git
   ignore = untracked
-[submodule "bundle/colorschemes"]
-  path = bundle/colorschemes
-  url = git@github.com:flazz/vim-colorschemes.git
-  ignore = untracked

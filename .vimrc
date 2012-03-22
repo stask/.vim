@@ -291,7 +291,9 @@ nnoremap <C-l> <C-w>l
 
 set background=dark
 "colorscheme molokai
-colorscheme vividchalk
+"colorscheme vividchalk
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " VimClojure stuff
 let g:vimclojure#HighlightBuiltins = 1
@@ -330,4 +332,4 @@ set nobackup
 set undodir=~/.vimundo
 
 " Yank to system clipboard by default
-set clipboard=unnamed
+"set clipboard=unnamed
