@@ -290,9 +290,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 set background=dark
-"colorscheme molokai
-"colorscheme vividchalk
 let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 colorscheme solarized
 
 " VimClojure stuff
