@@ -70,10 +70,6 @@
   path = bundle/vim-vividchalk
   url = git://github.com/tpope/vim-vividchalk.git
   ignore = untracked
-[submodule "bundle/scratch.vim"]
-  path = bundle/scratch.vim
-  url = git://github.com/vim-scripts/scratch.vim.git
-  ignore = untracked
 [submodule "bundle/vim-fuzzyfinder"]
   path = bundle/vim-fuzzyfinder
   url = git://github.com/cfurrow/vim-fuzzyfinder.git
