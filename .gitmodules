@@ -6,10 +6,6 @@
   path = bundle/VimClojure
   url = git://github.com/vim-scripts/VimClojure.git
   ignore = untracked
-[submodule "bundle/snipmate.vim"]
-  path = bundle/snipmate.vim
-  url = git://github.com/msanders/snipmate.vim.git
-  ignore = untracked
 [submodule "bundle/vim-jquery"]
   path = bundle/vim-jquery
   url = git://github.com/itspriddle/vim-jquery.git
