@@ -170,7 +170,7 @@ set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo
 set scrolloff=3
 
 " Allow the cursor to go in to "invalid" places
-set virtualedit=all
+"set virtualedit=all
 
 " For how *I* code these are the best types of settings for
 " completion but I get rid of some neat things that you might
