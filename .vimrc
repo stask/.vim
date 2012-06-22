@@ -12,6 +12,7 @@ set encoding=utf-8
 set ttyfast
 set undofile
 let mapleader = ","
+let maplocalleader = ","
 " fix regex
 nnoremap / /\v
 vnoremap / /\v
@@ -300,6 +301,7 @@ colorscheme solarized
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#FuzzyIndent = 1
+let vimclojure#WantNailgun = 1
 
 " Tidying whitespace
 " (http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/)
@@ -343,7 +345,11 @@ function GetClojureFold()
     return ">1"
   elseif getline(v:lnum) =~ '^\s*(defmacro.*\s'
     return ">1"
-  elseif getline(v:lnum) =~ '^\s+(defmethod.*\s'
+  elseif getline(v:lnum) =~ '^\s*(defmethod.*\s'
+    return ">1"
+  elseif getline(v:lnum) =~ '^\s*(deftest.*\s'
+    return ">1"
+  elseif getline(v:lnum) =~ '^\s*(def\s.*\s'
     return ">1"
   elseif getline(v:lnum) =~ '^\s*$'
     let my_cljnum = v:lnum
@@ -374,5 +380,5 @@ function TurnOnClojureFolding()
   setlocal foldmethod=expr
 endfunction
 
-autocmd FileType clojure call TurnOnClojureFolding()
+"autocmd FileType clojure call TurnOnClojureFolding()
 
