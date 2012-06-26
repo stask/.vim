@@ -90,3 +90,7 @@
 	path = bundle/vimerl
   url = git://github.com/jimenezrick/vimerl.git
   ignore = untracked
+[submodule "bundle/vim-web-indent"]
+	path = bundle/vim-web-indent
+  url = git://github.com/lukaszb/vim-web-indent.git
+  ignore = untracked
