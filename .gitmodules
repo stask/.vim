@@ -92,4 +92,5 @@
   ignore = untracked
 [submodule "bundle/slimv.vim"]
 	path = bundle/slimv.vim
-	url = git://github.com/vim-scripts/slimv.vim.git
+  url = git://github.com/vim-scripts/slimv.vim.git
+  ignore = untracked
