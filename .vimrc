@@ -297,15 +297,6 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 colorscheme solarized
 
-" VimClojure stuff
-"let g:vimclojure#HighlightBuiltins = 1
-"let g:vimclojure#ParenRainbow = 1
-"let g:vimclojure#FuzzyIndent = 1
-"let vimclojure#WantNailgun = 0
-
-" Slimv
-let g:slimv_keybindings=2
-
 " Tidying whitespace
 " (http://technotales.wordpress.com/2010/03/31/preserve-a-vim-function-that-keeps-your-state/)
 
