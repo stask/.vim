@@ -86,7 +86,3 @@
 	path = bundle/vimerl
   url = git://github.com/jimenezrick/vimerl.git
   ignore = untracked
-[submodule "bundle/slimv.vim"]
-	path = bundle/slimv.vim
-  url = git://github.com/vim-scripts/slimv.vim.git
-  ignore = untracked
